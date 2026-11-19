@@ -29,9 +29,13 @@ UA = "Mozilla/5.0 (compatible; CFDsTraderNewsBot/1.0)"
 # nombre, url, color del embed, máximo de publicaciones por ejecución
 FEEDS = [
     ("Bloomberg", "https://feeds.bloomberg.com/markets/news.rss", 0x000000, 4),
-    ("Wall Street Journal", "https://feeds.a.dj.com/rss/RSSMarketsMain.xml", 0x0080C3, 4),
+    ("Wall Street Journal",
+     "https://news.google.com/rss/search?q=site:wsj.com+markets+when:1d&hl=en-US&gl=US&ceid=US:en",
+     0x0080C3, 4),
     ("Financial Times", "https://www.ft.com/markets?format=rss", 0xFCD0B1, 4),
-    ("Yahoo Finance", "https://finance.yahoo.com/news/rssindex", 0x6001D2, 4),
+    ("Yahoo Finance",
+     "https://feeds.finance.yahoo.com/rss/2.0/headline?s=%5EGSPC,%5EIXIC,%5EDJI&region=US&lang=en-US",
+     0x6001D2, 4),
     ("Investing.com", "https://www.investing.com/rss/news.rss", 0xF7A21B, 4),
     ("TradingView · Ideas", "https://www.tradingview.com/feed/", 0x2962FF, 2),
 ]
